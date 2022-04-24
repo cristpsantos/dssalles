@@ -9,3 +9,7 @@ export const formatPrice = (price: number) => {
 export const formatDate = (date: Date) => {
   return date.toLocaleDateString();
 };
+
+export const formatDateToServer = (date?: Date) => {
+  return date?.toISOString().substring(0, 10);
+};
