@@ -37,3 +37,18 @@ export type SalesPieChartConfig = {
   labels: string[];
   series: number[];
 };
+
+export type SalesResponse = {
+  content: Sales[];
+};
+
+export type Sales = {
+  id: number;
+  date: string;
+  volume: number;
+  total: number;
+  gender: Gender;
+  categoryName: string;
+  paymentMethod: string;
+  storeName: string;
+};
